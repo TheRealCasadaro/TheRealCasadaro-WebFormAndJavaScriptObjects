@@ -14,13 +14,13 @@
 window.onload = function()
 {
     // place the button object in memory by assigning it to a variable
-    let SumbitUserInformationButton = <HTMLElement>document.querySelector("input[type=buttoon]");
+    let SumbitUserInformationButton = <HTMLElement>document.querySelector("input[type=button]");
     // gets the button in memory and adds a function that us executed when the button is clicked
-    SumbitUserInformationButton.ondblclick = VerifyUserInfo; //VerifyUserInfo is a function that Verifies User Info
+    SumbitUserInformationButton.onclick = VerifyUserInfo; //VerifyUserInfo is a function that Verifies User Info
 }
 
 //This fuction will verify the users input(s).
 function VerifyUserInfo () {
     // TASKS
-    alert("Button Clicked")
+    alert("Button Clicked");
 }
