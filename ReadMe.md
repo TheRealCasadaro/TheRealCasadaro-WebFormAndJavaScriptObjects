@@ -2,6 +2,9 @@
 ---
 
 ## Web Form And JavaScript Objects
+### REQUIREMENTS
+[TypeScript](https://www.typescriptlang.org/)
+
 ### Form Validation
 [GitHub Repository](https://github.com/TheRealCasadaro/TheRealCasadaro-WebFormAndJavaScriptObjects)
 
