@@ -9,8 +9,6 @@
     located in the root directory.
 */
 
-
-
 class NewUserDomain
 // this class is used to create an object 
 // that can will hold user inputs
@@ -24,7 +22,6 @@ class NewUserDomain
     DesireDomainName: string;
 }
 
-
 window.onload = function ()
 // The window is what the user see's when that app loads.
 // This function get the button from the document and adds a click even lisenter.
@@ -34,8 +31,6 @@ window.onload = function ()
     // gets the button in memory and adds a function that us executed when the button is clicked
     SumbitUserInformationButton.onclick = CollectUserInformation; //VerifyUserInfo is a function that Verifies User Info
 }
-
-
 
 function CollectUserInformation(): NewUserDomain {
     //This fuction gathers the users input from the the main HTML page and returns an object that contains everything that was entered in the form.
@@ -63,13 +58,14 @@ function CollectUserInformation(): NewUserDomain {
     userInput.DesireDomainName = userDesiredDomainName.value;
 
     console.log("returning User Inputs")
-    DisplayUserInput();
+    DisplayUserInput(userInput);
     return userInput;
 }
 
-function DisplayUserInput() {
+function DisplayUserInput(UserInput) {
     // TODO: Display users  verified input below the input form.
     let display = document.getElementById("UserInputDisplayArea");
     console.log("user display area retrieved")
     display.innerHTML = "User Input Collection Triggered";
+    console.log(userIput)
 }
